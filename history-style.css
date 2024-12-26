@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(historyBackround.webp);
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: .5s ease-in;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a, h1{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+}
+
+.navbar ul li a:active{
+    color: blue;
+}
+
+#history-style{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+div :where(img){
+    width: 200px;
+    height: 200px;
+    border: red dotted;
+    border-radius: 2rem;
+}
+
+div :where(img):hover{
+    border: blue;
+    border-style: outset;
+}
+
+div :where(strong){
+    color: red;
+    text-decoration: underline dashed;
+}
+
+strong:first-of-type{
+    font-size: larger;
+}
+
+.conti{
+    display: flex;
+    justify-content: space-between;
+}
+
+#history-style :where(.conti, .secondConti){
+    padding: 2rem;
+    color: rgb(238, 232, 232);
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50rem;
+    height: 30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+div > h2{
+    color: red;
+    box-shadow: 5px 5px 15px rgba(245, 241, 241, 0.3);
+    line-height: 3;
+}
+
+#history-style p{
+    font-size: large;
+}
