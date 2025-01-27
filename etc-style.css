@@ -22,7 +22,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .navbar ul li {
@@ -67,9 +67,7 @@ h1 {
     color: white;
     padding: 5rem;
     gap: 5rem;
-    display: grid;
-    place-items: center;
-    margin-left:30%;
+    margin-left: 20%;
 }
 
 img {
